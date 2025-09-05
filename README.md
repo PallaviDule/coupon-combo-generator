@@ -12,33 +12,31 @@
 ## Project Setup
 
 1. Clone the repository:
-```bash
-git clone git@github.com:PallaviDule/coupon-combo-generator.git
-cd coupon-combinations-generator
-```
+    ```bash
+    git clone git@github.com:PallaviDule/coupon-combo-generator.git
+    cd coupon-combinations-generator
+    ```
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-3. Run
-The main file is `src/index.ts`. You can run it using `ts-node`:
+3. Run  
+    The main file is `src/index.ts`. You can run it using `ts-node`:
 
-```bash
-npm run start
-```
+    ```bash
+    npm run start
+    ```
 
-This will print all valid coupon combinations to the console.
+    This will print all valid coupon combinations to the console.
 
-4 Run Test
+4. Run Test
 
-The project uses Jest for testing. Test files are located in `tests/`.
+    The project uses Jest for testing. Test files are located in `tests/`.
 
-To run all tests:
-
-```bash
-npm run test
-```
+    ```bash
+    npm run test
+    ```
 
