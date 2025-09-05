@@ -8,11 +8,9 @@ This project provides a utility to generate all possible combinations of coupons
 
 ## Assumptions & Procedure
 ### Assumptions
-
 - Each coupon has a blockedTypes array representing the types it blocks.
-
 - A coupon with no blockedTypes can be combined with any other coupon.
-
+- A coupon combination is valid only if no blocked type conflicts exist between any two coupons in that combination.
 - Combinations that are subsets of a larger valid combination should be removed.
 
 ### Procedure / Approach
@@ -22,6 +20,7 @@ This project provides a utility to generate all possible combinations of coupons
     - Iterate through the list of coupons recursively to build all possible combinations.
     - Track blocked types in a Set to avoid conflicts.
     - Skip any coupon if it conflicts with the blocked types of the current combination.
+    - Record valid combinations as they are formed.
 
 - Subset Filtering
     - After generating all candidate combinations, filter out combinations that are strict subsets of any other combination.
